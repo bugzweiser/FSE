@@ -17,7 +17,7 @@ h1{
 }
 
 .select-selected {
-  background-color: DodgerBlue;
+  background-color: blue;
 }
 
 /* Style the arrow inside the select element: */
@@ -65,5 +65,42 @@ h1{
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.custom-select .tooltiptext1 {
+  visibility: hidden;
+  width: 175px;
+  background-color: white;
+  color: blue;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  bottom: 90%;
+  left: 20%;
+  z-index: 1;
+}
+.custom-select .tooltiptext1::after{
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.custom-select:hover .tooltiptext1 {
+  visibility: visible;
+}
+</style>
 
 
