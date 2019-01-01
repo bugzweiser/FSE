@@ -1,5 +1,6 @@
 body {
   background-color: lightblue;
+  width: calc(100vw - 34px);
 }
 
 h1{
