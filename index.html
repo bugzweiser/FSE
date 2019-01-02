@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <title>FSE Management System</title>
-<link rel="icon"  href="favicon.ico"/>
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon"  href="/html_project/techline_monitor/favicon.ico"/>
+<!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <p align="Center">
-	  <img src="veloster_n.jpg" alt="veloster_n" align="Middle">
-	  <tt><b><font size="7">Techline Case Management</font></b></tt>
-	  <img src="veloster_n.jpg" alt="veloster_n" align="Top"></p>
-    <hr size="5" noshade>
+  <link rel="stylesheet" type="text/css" href="dropdown.css">
+  
+<div class="container">  
+  <img src="/html_project/techline_monitor/images/n_divide.jpg" alt="veloster_n">
+</div>
+ 	
+	<!--Dealer Selection-->
 	
-<p align="center"><tt><b><font size="4">Stumbled through by J. Emerson</font></b></tt></p>
-
-	<!--Dealer Select-->
-<p><h1>Dealer Select</h1></p>
 
 <div class="custom-select" style="width: 350px;">
  <select>
@@ -62,6 +59,8 @@
   </select>
   <span class="tooltiptext1">Please Select a Dealer</span>
 </div><br>
+
+	<!-- Dealer Selection Drop Down Menu Design -->
 
 <script>
 var x, i, j, selElmnt, a, b, c;
@@ -138,11 +137,17 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
 
-<div class="dealer-info">Dealer info plotted here</div>
+<div class="dealer-info">Dealer info plotted here
+	
+	
+
+
+</div>
 
 <div class="progBar">Getting ass kicked progress:
 <progress value="68" max="100">
 </progress></div>
+
 
 </body>
 </html>
