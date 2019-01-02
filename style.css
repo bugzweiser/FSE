@@ -14,11 +14,9 @@ img {
 
 .dealer-info {
   border: 2px solid black;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-top: 1%;
   height: 600px;
+  width: auto;
   background-color: lightgrey;
   font-size: 20px;
   text-align: center;
