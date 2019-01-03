@@ -1,11 +1,13 @@
 /* The container must be positioned relative: */
-.custom-select {
+.info-select {
   position: relative;
   font-family: Hyundai Sans Text;
+  top: -7px;
+  left: 30px;
   width: 320px;
 }
 
-.custom-select select {
+.info-select select {
   display: none; /*hide original SELECT element: */
 }
 
@@ -59,13 +61,13 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.custom-select {
+.info-select {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
-.custom-select .tooltiptext1 {
+.info-select .tooltiptext1 {
   visibility: hidden;
   width: 140px;
   height: 10px;
@@ -86,6 +88,6 @@
   z-index: 1;
 }
 
-.custom-select:hover .tooltiptext1 {
+.info-select:hover .tooltiptext1 {
   visibility: visible;
 }
