@@ -40,6 +40,8 @@ p{
 	font-style: italic;
 }
 .progBar {
+	position: relative;
 	color: red;
-	font-size: 30px;
+	font-size: 25px;
+	left: 30px;
 }
