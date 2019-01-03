@@ -11,38 +11,3 @@ img {
     height: 100%;
     opacity: 0.7;
 }
-
-.heatmap {
-    overflow: hidden;
-    padding-top: 58%;
-    position: relative;
-}
-iframe {
-    border: 0;
-    height: 50%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 50%;
-}
-
-.case-info {
-    background-color: #ccc;
-    border-radius: 0rem;
-    margin: 0 auto;
-    max-width: 90%;
-    padding: 2rem;
-    width: 100%;
-}
-p{
-	Font-size: 30px;
-	text-align: center;
-	font-style: italic;
-}
-
-.progBar {
-	position: relative;
-	color: red;
-	font-size: 25px;
-	left: 30px;
-}

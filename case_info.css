@@ -1,0 +1,35 @@
+.heatmap {
+    overflow: hidden;
+    padding-top: 58%;
+    position: relative;
+}
+iframe {
+    border: 0;
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+}
+
+.case-info {
+    background-color: #cccccc;
+    border-radius: 1rem;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 2rem;
+    width: 100%;
+}
+p {
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+}
+
+.progBar {
+	position: relative;
+	text-align: left;
+	left: 10px;
+	color: red;
+	font-size: 25px;
+}

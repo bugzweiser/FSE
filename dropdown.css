@@ -64,7 +64,7 @@
 .info-select {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  border-bottom: 0px dotted black;
 }
 
 .info-select .tooltiptext1 {

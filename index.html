@@ -2,26 +2,64 @@
 <html lang="en">
 <head>
 <title>FSE Management System</title>
-<link rel="icon"  href="favicon.ico"/>
+<link rel="icon"  href="/html_project/techline_monitor/favicon.ico"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="dropdown.css">
+  <link rel="stylesheet" type="text/css" href="dropdown.css"> 
+  <link rel="stylesheet" type="text/css" href="daterange.css">
+  <link rel="stylesheet" type="text/css" href="case_info.css">
   
 <div class="container">  
-  <img src="n_divide.jpg" alt="veloster_n">
+  <img src="/html_project/techline_monitor/images/n_header2.jpg" alt="veloster_n">
 </div>
  	
 	<!--Dealer Selection-->
 	
-<div class="info-select">
- <select>
-   <option value="0">Select Dealer</option>
-	<option value="1">CA020 Frank Hyundai</option>
+<div class="info-select"> <!--FSE Selection-->
+  <select>
+   <option value="0">Please Select FSE</option>
+    <option value="1">Aronn Walters</option>
+    <option value="2">Art Anderson</option>
+    <option value="3">Ben Johnson</option>
+    <option value="4">Bill Baitzel</option>
+    <option value="5">Bob Stepanovich</option>
+    <option value="6">Brian Cattelino</option>
+    <option value="7">Daniel Fernandez</option>
+    <option value="8">David Mull</option>
+    <option value="9">James Dietzel</option>
+    <option value="10">Jason Emerson</option>
+    <option value="11">Mark Konenkamp</option>
+    <option value="12">Mike Porter</option>
+    <option value="13">Rich Palahunik</option>
+    <option value="14">Robert Toscas</option>
+    <option value="15">Rod Helgeson</option>
+    <option value="16">Roger LaFleur</option>
+    <option value="17">Rolf Stegemann</option>
+    <option value="18">Ryan Morrison</option>
+    <option value="19">Steve Trook</option>
+    <option value="20">Tim Bompiani</option>
+    <option value="21">Todd Scheufler</option>
+    <option value="22">Tony Barbere</option>
+    <option value="23">Vinnie Tiberio</option>
+    <option value="24">Yeongjae Choe</option>
+    <option value="25">Zach Wiebal</option>
+  </select>
+  <span class="tooltiptext1">Please select an FSE</span>
+</div>
+	
+<div class="info-select"><!--Dealer Selection-->
+  <select>
+   <option value="a">Dealer Select</option>
+    <option value="b">Populate Dealer List for FSE Selected</option>
+	<!--<option value="1">CA020 Frank Hyundai</option>
 	<option value="2">CA106 Rally Hyundai</option>
 	<option value="3">CA121 Ontario Hyundai</option>
 	<option value="4">CA134 Gosch Hyundai</option>
@@ -53,48 +91,23 @@
 	<option value="30">CA372 Imperial Valley Hyundai</option>
 	<option value="31">CA373 Hyundai of Moreno Valley</option>
 	<option value="32">CA379 Hyundai of Escondido</option>
-	<option value="33">CA380 North County Hyundai</option> 
+	<option value="33">CA380 North County Hyundai</option>-->
   </select>
-  <span class="tooltiptext1">Please Select a Dealer</span>
-</div>
-
-<div class="info-select"> 
-  <select>
-   <option value="0">Select FSE</option>
-    <option value="1">Aronn Walters</option>
-    <option value="2">Art Anderson</option>
-    <option value="3">Ben Johnson</option>
-    <option value="4">Bill Baitzel</option>
-    <option value="5">Bob Stepanovich</option>
-    <option value="6">Brian Cattelino</option>
-    <option value="7">Daniel Fernandez</option>
-    <option value="8">David Mull</option>
-    <option value="9">James Dietzel</option>
-    <option value="10">Jason Emerson</option>
-    <option value="11">Mark Konenkamp</option>
-    <option value="12">Mike Porter</option>
-    <option value="13">Rich Palahunik</option>
-    <option value="14">Robert Toscas</option>
-    <option value="15">Rod Helgeson</option>
-    <option value="16">Roger LaFleur</option>
-    <option value="17">Rolf Stegemann</option>
-    <option value="18">Ryan Morrison</option>
-    <option value="19">Steve Trook</option>
-    <option value="20">Tim Bompiani</option>
-    <option value="21">Todd Scheufler</option>
-    <option value="22">Tony Barbere</option>
-    <option value="23">Vinnie Tiberio</option>
-    <option value="24">Yeongjae Choe</option>
-    <option value="25">Zach Wiebal</option>
-  </select>
-  <span class="tooltiptext1">Please select an FSE</span>
+  <span class="tooltiptext1">Please Select a Dealer</span> 
+ </div>
+ 
+ <Div class="info-select">
+    <input type="text" name="daterange" value="01/01/2018 - 01/01/2022" size="28" style="text-align:center;"> Date Range</input>
+	<span class="tooltiptext1">Please Select a Date Range</span>
+ </div>
+ 
 </div>
 
 	<!-- Dealer Selection Drop Down Menu Design -->
 
 <script>
 var x, i, j, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
+/*look for any elements with the class "info-select":*/
 x = document.getElementsByClassName("info-select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
@@ -167,6 +180,17 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 </script>
 
+	<!--Date Range-->
+
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
 
 	<!--Case Information Section-->
 	
@@ -174,13 +198,12 @@ document.addEventListener("click", closeAllSelect);
   <p>Case info plotted here from selections above<br>(with heatmap)</p>
   <div class="heatmap">
    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1702934.815148305!2d-116.69003343613542!3d34.50306241795512!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1546471222183" frameborder="0" allowfullscreen></iframe>
-   </div>
+  </div>
 </div>
 
 <div class="progBar">Getting ass kicked progress:
-<progress value="68" max="100">
+  <progress value="48" max="100">
 </progress></div>
-
 
 </body>
 </html>
