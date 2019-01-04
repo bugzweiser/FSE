@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FSE Resource Portal</title>
+<link rel="icon"  href="/html_project/techline_monitor/favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="resource_portal.css">
+
+<div class="container"> 
+
+  <img src="/html_project/techline_monitor/images/n_header4.jpg" alt="veloster_n">
+  
+</div>
+
+</head>
+
+<body>
+ 
+<div class="plot">
+
+<h2><center>Links / Resources</center></h2>
+
+ <div style="float:right">
+  <input type="text" id="vin" style="color:#888; text-align:center;" value="Enter Vin Here" maxlength="17" onfocus="inputFocus(this)" onblur="inputBlur(this)" /> <button>Search</button><br>
+  <input type="text" id="test" style="color:#888; text-align:center;" value="Enter TSB Here" maxlength="12" onfocus="inputFocus(this)" onblur="inputBlur(this)" /> <button>Search</button><br>
+  <input type="text" id="test" style="color:#888; text-align:center;" value="Enter DTC Here" maxlength="8" onfocus="inputFocus(this)" onblur="inputBlur(this)" /> <button>Search</button><br>
+ </div>
+ 
+ <div class="links">
+  <li><a href="http://m0035271.hke.local/vpn.php?pass=/index.php" target="_blank">Complete Tony Panel</a></li>
+  <li><a href="/html_project/techline_monitor/techline_CM.html" target="_blank">Techline Case Management</a></li>
+  <li><a href="https://mpqms.hmausa.com/" target="_blank">Mobile PQMS</a></li>
+  <li><a href="https://www.tecklinks.com/" target="_blank">HTSS Techlinks</a></li>
+  <li><a href="http://fast.hmaservice.com:8077/default.aspx" target="_blank">FAST Entry Portal</a></li>
+  <li><a href="https://wdcs.hyundaidealer.com/irj/portal/iam?TargetSYS_ID=SYS0000" target="_blank">Hyundai Dealer Login</a></li>
+  <li><a href="https://wdcs.genesisdealerusa.com/irj/portal/iam" target="_blank">Genesis Dealer Login</a></li>
+  <li><a href="#fill" target="_blank">fill in blank</a></li>
+  <li><a href="#fill" target="_blank">fill in blank</a></li>
+  <li><a href="#fill" target="_blank">fill in blank</a></li>
+ </div>
+</div>
+ 
+<div class="sticky-footer">
+  <img src="/html_project/techline_monitor/images/footer.jpg" alt="veloster_n" />
+</div>
+
+<script>
+function inputFocus(i) {
+    if (i.value == i.defaultValue) { i.value = ""; i.style.color = "#000"; }
+}
+function inputBlur(i) {
+    if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
+}
+</script>
+</body>
+</html>

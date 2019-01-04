@@ -1,0 +1,29 @@
+.plot {
+    background-color: #cccccc;
+    border-radius: 1rem;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 2rem;
+    width: 100%;
+}
+input[type="text"] {
+    font-size:175%;
+	size: 25;
+}
+div.links {
+	font-size: 135%;
+}
+button {
+	font-size: 100%
+}
+ .sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    }
+
+ .sticky-footer img {
+    display: table;
+    position: relative;
+    margin: auto;
+   }
