@@ -4,7 +4,7 @@ body {
 	width: calc(100vw - 24px);
 }
 
-.container {
+.header {
     position: relative;
 }
 img { 
