@@ -16,14 +16,13 @@ div.links {
 button {
 	font-size: 100%
 }
- .sticky-footer {
+/* .sticky-footer {
     position: fixed;
     bottom: 0;
     width: auto;
-    }
+    }*/
 
  .sticky-footer img {
-    display: table;
     position: relative;
     margin: auto;
    }
