@@ -2,9 +2,10 @@
 .info-select {
   position: relative;
   font-family: Hyundai Sans Text;
-  top: -5px;
-  left: 30px;
+  top: 0px;
+  left: 400px;
   width: 320px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .info-select select {
@@ -91,3 +92,15 @@
 .info-select:hover .tooltiptext1 {
   visibility: visible;
 }
+
+.date {
+  position: relative;
+  left: 37%;
+  font-size: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.date:hover .tooltiptext2 {
+  visibility: visible;*/

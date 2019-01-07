@@ -1,29 +1,32 @@
-.heatmap {
-    overflow: hidden;
-    padding-top: 58%;
-    position: relative;
-}
-iframe {
-    border: 0;
-    height: 50%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 50%;
-}
-
-.case-info {
+.plot {
     background-color: #cccccc;
+	border-style: ridge;
     border-radius: 1rem;
+	border-color: #666666;
     margin: 0 auto;
-    max-width: 90%;
-    padding: 2rem;
+    max-width: 95%;
+    padding: 1rem;
     width: 100%;
 }
 p {
 	font-size: 30px;
 	text-align: center;
 	font-style: italic;
+}
+.heatmap {
+    overflow: hidden;
+    padding-top: 58%;
+    position: relative;
+}
+iframe {
+    position: absolute;	
+	border-style: inset;
+    border: 1;
+	width: 50%;
+    height: 50%;
+	top: 49%;
+    left: 49%;   
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .progBar {

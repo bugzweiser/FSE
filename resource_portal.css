@@ -1,24 +1,27 @@
 .plot {
     background-color: #cccccc;
+	border-style: ridge;
     border-radius: 1rem;
+	border-color: #666666;
     margin: 0 auto;
     max-width: 90%;
     padding: 2rem;
     width: 100%;
 }
 input[type="text"] {
-    margin-top: 8%;
+	margin-top: 7%;
     font-size:175%;
-    size: 25;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	size: 25;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 div.links {
-    font-size: 135%;
+	font-size: 135%;
 }
 button {
-    font-size: 100%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-size: 100%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+   
 footer{
 	position: relative;
 	bottom: 0px;
