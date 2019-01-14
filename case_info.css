@@ -14,9 +14,10 @@ p {
 	font-style: italic;
 }
 .heatmap {
-    overflow: hidden;
-    padding-top: 28%;
-    position: relative;
+	position: relative;
+	overflow: hidden;
+	padding-top: 28%;
+	position: relative;
 }
 iframe {
     position: absolute;	
