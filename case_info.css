@@ -23,8 +23,8 @@ iframe {
 	border-style: inset;
     border: 1;
 	width: 50%;
-    height: 100%;
-	top: 20%;
+    height: 70%;
+	top: 28%;
     left: 49%;   
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
