@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <title>Techline Case Management</title>
-<link rel="icon"  href="favicon.ico"/>
+<link rel="icon"  href="/html_project/techline_monitor/favicon.ico"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <!--<script type="text/javascript" src="dropdown.js"></script>-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="dropdown.css">
   <link rel="stylesheet" type="text/css" href="daterange.css">
@@ -17,7 +17,7 @@
   
 <div class="header">
 
-  <img src="n_header2.jpg" alt="veloster_n">
+  <img src="/html_project/techline_monitor/images/n_header2.jpg" alt="veloster_n">
 
 </div>
 
@@ -28,9 +28,9 @@
 	<!--Dealer Selection-->
 	
 <div class="plot">
-
- 	    <input type="text" class="date" name="daterange" value="01/01/2018 - 01/01/2022" size="20"; style="text-align:center;"></input>
-		<!--<span class="tooltiptext2">Please Select a Date Range</span>-->
+	
+ 	    <input type="text" class="date" name="daterange" value="01/01/2018 - 01/01/2022" size="25"; style="text-align:center;"></input>
+		<!--<span class="tooltiptext1">Please Select a Date Range</span>-->
 
 	<br>
 	<br>
@@ -106,22 +106,25 @@
 			<option value="33">CA380 North County Hyundai</option>-->
 		</select>
       <span class="tooltiptext1">Please Select a Dealer</span> 
-	</div>
- 
-  <p>Case info plotted here from selections above<br>(with heatmap)</p>
-  
+	</div>	
+
 	<div class="heatmap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1702934.815148305!2d-116.69003343613542!3d34.50306241795512!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1546471222183" frameborder="0" allowfullscreen></iframe>
+		<div class="iframe">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1702934.815148305!2d-116.69003343613542!3d34.50306241795512!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1546471222183" frameborder="0"; allowfullscreen></iframe>
+		</div>
+		<div class="dealer_info">
+			<div><h2><center><p>Dealer Selected Info Plotted Here</p></center></h2></div>
+		</div>	
+		<div class="dataplot">
+			<div><h2><center><p>Case Info plotted Here</p></center></h2></div>
+			<div><p>Dealer Selected:</p></div>
+			<div><p>Cases:</p></div> 
+	    </div>
+	
 	</div>
   
 </div>
  
-  <!--<div class="info-select">
-  
-    <button class="btn"><i class="fa fa-home"></i></button>
- 
-  </div>-->
-
 	<!-- Dealer Selection Drop Down Menu Design -->
 
 <script>
